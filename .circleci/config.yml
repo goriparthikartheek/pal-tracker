@@ -51,7 +51,11 @@ jobs:
           command: |
             cd $EXTRACT_DEST
 
+<<<<<<< HEAD
             cf login -a $CF_API -u "$CF_USERNAME" -p "$CF_PASSWORD" -o "$CF_ORG" -s "$goriparthi_kartheek@dell.com"
+=======
+            cf login -a $CF_API -u "$CF_USERNAME" -p "$CF_PASSWORD" -o "$CF_ORG" -s "$CF_SPACE_REVIEW"
+>>>>>>> b97d2ed... Add deployment pipeline
             cf push -f manifest-$ENVIRONMENT.yml
 
   deployToProd:
@@ -102,4 +106,8 @@ workflows:
            - deployToReview
       - deployToProd:
           requires:
+<<<<<<< HEAD
             - canDeployToProduction
+=======
+            - canDeployToProduction
+>>>>>>> b97d2ed... Add deployment pipeline
