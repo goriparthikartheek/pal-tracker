@@ -1,0 +1,8 @@
+###--safnjkdas
+GET http://localhost:5000/time-entries
+
+###--safnjkdas
+POST http://localhost:5000/time-entries
+Content-Type: application/json
+
+{"projectId": 1, "userId": 2, "date": "2019-01-01", "hours": 8}
