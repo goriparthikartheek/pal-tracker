@@ -1,8 +1,22 @@
+@url=http://localhost:5000
 ###--safnjkdas
-GET http://localhost:5000/time-entries
+GET {{url}}/time-entries
+
+###--safnjkdas
+
+### POST http://pal-tracker-review-excellent-elephant.cfapps.io/time-entries
+###POST http://pal-tracker-production-brash-wildebeest.cfapps.io/time-entries
+POST http://localhost:5001/time-entries
+Content-Type: application/json
+
+{"projectId": 1, "userId": 2, "date": "2019-01-01", "hours": 8}
 
 ###--safnjkdas
 POST http://localhost:5000/time-entries
 Content-Type: application/json
 
-{"projectId": 1, "userId": 2, "date": "2019-01-01", "hours": 8}
+{"projectId": 2, "userId": 3, "date": "2019-01-01", "hours": 9}
+
+###curl -i -X DELETE -H "Content-Type: application/json" localhost:5000/time-entries/${TIME_ENTRY_ID}
+DELETE https://pal-tracker-production-brash-wildebeest.cfapps.io/time-entries/1
+Content-Type: application/json
