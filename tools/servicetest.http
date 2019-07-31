@@ -5,8 +5,8 @@ GET {{url}}/time-entries
 ###--safnjkdas
 
 ### POST http://pal-tracker-review-excellent-elephant.cfapps.io/time-entries
-###POST http://pal-tracker-production-brash-wildebeest.cfapps.io/time-entries
-POST http://localhost:5001/time-entries
+### POST http://localhost:5001/time-entries
+POST http://pal-tracker-production-brash-wildebeest.cfapps.io/time-entries
 Content-Type: application/json
 
 {"projectId": 1, "userId": 2, "date": "2019-01-01", "hours": 8}
