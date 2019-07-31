@@ -20,3 +20,6 @@ Content-Type: application/json
 ###curl -i -X DELETE -H "Content-Type: application/json" localhost:5000/time-entries/${TIME_ENTRY_ID}
 DELETE https://pal-tracker-production-brash-wildebeest.cfapps.io/time-entries/1
 Content-Type: application/json
+
+###
+GET https://localhost:5001/info
